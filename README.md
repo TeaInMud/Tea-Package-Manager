@@ -58,7 +58,7 @@ tea add <native-package>
 The ecosystem is split into multiple modules for cleaner management:
 
 1. **`tea` (Core Manager):** The script managed right here in this repository. Handles searching, downloading, updating, and syncing packages.
-2. **[tpm.reg.py](https://github.com/TeaInMud/Tea-Package-Manager/blob/master/tpm/registry/tpm.reg.py):** Holds the centralized global registry file `tea-registry.py`.
+2. **[Tea Package Manager Register](https://github.com/TeaInMud/Tea-Package-Manager/blob/master/tpm/registry/tpm.reg.py):** Holds the centralized global registry file `tpm.reg.py`.
 3. **`better-git`:** A custom tool packaged via TPM that builds a streamlined, user-friendly wrapper around Git commands for faster mobile commits (`better-git save`, `better-git sync`).
 
 ---
