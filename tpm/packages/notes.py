@@ -11,7 +11,7 @@ def init_env():
     os.makedirs(TEA_DIR, exist_ok=True)
 
 def show_help():
-    print("📝 NOTES — Quick Terminal Notebook")
+    print("NOTES — Quick Terminal Notebook")
     print("Usage: notes <command> [arguments]\n")
     print("Commands:")
     print("  add \"<text>\"  -> Add a new note with a timestamp")
@@ -24,36 +24,36 @@ def add_note(text):
     try:
         with open(NOTES_FILE, "a") as f:
             f.write(f"- [{timestamp}] {text}\n")
-        print(f"✅ Saved note: \"{text}\"")
+        print(f"Saved note: \"{text}\"")
     except Exception as e:
-        print(f"❌ Failed to save note: {e}")
+        print(f"Failed to save note: {e}")
 
 def view_notes():
     if not os.path.exists(NOTES_FILE) or os.stat(NOTES_FILE).st_size == 0:
-        print("📋 Your notebook is completely empty!")
+        print("Your notebook is completely empty!")
         return
     
-    print("📋 Saved Notes:")
+    print("Saved Notes:")
     print("-" * 40)
     try:
         with open(NOTES_FILE, "r") as f:
             print(f.read().strip())
     except Exception as e:
-        print(f"❌ Failed to read notes: {e}")
+        print(f"Failed to read notes: {e}")
     print("-" * 40)
 
 def clear_notes():
     if not os.path.exists(NOTES_FILE):
-        print("📋 Nothing to clear.")
+        print("Nothing to clear.")
         return
         
-    confirm = input("⚠️ Are you sure you want to delete ALL notes? (y/N): ").strip().lower()
+    confirm = input("Are you sure you want to delete ALL notes? (y/N): ").strip().lower()
     if confirm == 'y':
         try:
             os.remove(NOTES_FILE)
-            print("🧹 Notebook cleared successfully!")
+            print("Notebook cleared successfully!")
         except Exception as e:
-            print(f"❌ Failed to clear notebook: {e}")
+            print(f"Failed to clear notebook: {e}")
     else:
         print("Cancelled.")
 
