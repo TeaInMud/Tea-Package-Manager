@@ -1,5 +1,5 @@
 PACKAGES = {
-    "juice": "https://raw.githubusercontent.com/TeaInMud/juice/refs/heads/main/juice.sh",
+    "juice": "https://raw.githubusercontent.com/TeaInMud/Tea-Package-Manager/refs/heads/master/tpm/packages/juice.sh",
     "skibidi": "https://raw.githubusercontent.com/TeaInMud/TPM-Custom-Packages/refs/heads/main/skibidi.sh",
     "better-git": "https://raw.githubusercontent.com/TeaInMud/TPM-Custom-Packages/refs/heads/main/better-git.py"
 }
