@@ -10,7 +10,7 @@ TEA_PATH = os.path.join(TERMUX_BIN, "tea")
 TEA_PAYLOAD = """#!/usr/bin/env python3
 import sys, os, urllib.request, traceback, datetime
 
-GLOBAL_REGISTRY_URL = "https://raw.githubusercontent.com/TeaInMud/TPM-Registry/refs/heads/main/tea-registry.py"
+GLOBAL_REGISTRY_URL = "https://raw.githubusercontent.com/TeaInMud/Tea-Package-Manager/refs/heads/master/tpm/registry/tpm.reg.py"
 LOG_DIR = os.path.expanduser("~/.tea")
 LOG_FILE = os.path.join(LOG_DIR, "errors.log")
 
