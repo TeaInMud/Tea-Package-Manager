@@ -19,7 +19,7 @@ Open your terminal environment and run the matching command to automatically dow
 
 ### For iSH Shell (Alpine iOS)
 ```bash
-apk update && apk add curl python3 && curl -fsSL [https://githubusercontent.com](https://raw.githubusercontent.com/TeaInMud/Tea-Package-Manager/refs/heads/master/tpm/install/iOS/iOS.py) | python3
+apk update && apk add curl python3 && curl -fsSL https://raw.githubusercontent.com/TeaInMud/Tea-Package-Manager/refs/heads/master/tpm/install/iOS/iOS.py | python3
 ```
 
 ### For Termux (Android)
