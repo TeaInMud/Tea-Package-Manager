@@ -24,7 +24,7 @@ apk update && apk add curl python3 && curl -fsSL https://raw.githubusercontent.c
 
 ### For Termux (Android)
 ```bash
-pkg update && pkg install curl python && curl -fsSL https://githubusercontent.com | python
+pkg update && pkg install curl python && curl -fsSL https://raw.githubusercontent.com/TeaInMud/Tea-Package-Manager/refs/heads/master/tpm/install/Android/android.py | python
 ```
 
 ---
